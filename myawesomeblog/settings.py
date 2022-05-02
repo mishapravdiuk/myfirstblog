@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'myawesomeblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myawesomeblogdb',
+        'NAME': 'myawesomeblog',
         'USER': 'postgres',
         'PASSWORD': '8417',
         'HOST': 'localhost',
