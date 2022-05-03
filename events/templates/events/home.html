@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+ {% load static %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,13 +60,13 @@
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav ms-auto">
 	        <li class="nav-item">
-	          <a class="nav-link " aria-current="page" href="#">About me</a>
+	          <a class="nav-link " aria-current="page" href="{% static 'AboutMe.txt' %}">About me</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Facebook</a>
+	          <a class="nav-link" href="https://www.facebook.com/profile.php?id=100013734106049" target="_blank" rel="noopener noreferrer">Facebook</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Blog</a>
+	          <a class="nav-link active" href="{% url 'showblog' %}">Blog</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -82,6 +83,9 @@
         <p>
           <a href="mailto:mishapravdiuk@gmail.com" class="btn btn-primary my-2">Mail me</a>
          </p>
+         
+         <img src="{% static 'Taras.png' %}" alt="" height="300" width="300" class="img-fluid">
+         
       </div>
     </div>
   </section>
